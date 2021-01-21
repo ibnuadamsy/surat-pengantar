@@ -35,7 +35,7 @@ class pengantar_c extends CI_Controller {
 				$status_kel=$this->input->post('status_kel');
 
 			}
-		$this->pengan_m->simpan($no_pengantar,$Keperluan,$Lain_lain,$NIK,$status_rt,$status_rw,$status_kel);
+		$this->Pengan_m->simpan($no_pengantar,$Keperluan,$Lain_lain,$NIK,$status_rt,$status_rw,$status_kel);
 		$this->session->set_flashdata('sukses'," Berhasil Dibuat");
 		redirect('pengantar_c');
 	}
@@ -43,14 +43,14 @@ class pengantar_c extends CI_Controller {
 	function search(){
 		$NIK=$this->input->get('NIK');
 		$data['content'] = 'search_view';
-		$data['data']=$this->pengan_m->search_pengantar($NIK);
+		$data['data']=$this->Pengan_m->search_pengantar($NIK);
 		$this->load->view($this->template,$data);
 		
 	}
 
 	function get_autocomplete(){
 		if (isset($_GET['term'])) {
-		  	$result = $this->pengan_m->search_pengantar($_GET['term']);
+		  	$result = $this->Pengan_m->search_pengantar($_GET['term']);
 		   	if (count($result) > 0) {
 		    foreach ($result as $row)
 		     	$arr_result[] = array(
