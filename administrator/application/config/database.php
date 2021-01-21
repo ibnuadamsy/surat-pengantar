@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'ket_surat',
+	'hostname' => 'remotemysql.com',
+	'username' => 'vlGB3PtkUl',
+	'password' => 'mssvAzYtsl',
+	'database' => 'vlGB3PtkUl',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
