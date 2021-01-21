@@ -6,7 +6,7 @@ class pengantar_c extends CI_Controller {
 
 	function __construct(){
 		parent::__construct();
-		$this->load->model('pengan_m');
+		$this->load->model('Pengan_m');
 		$this->load->model('nomer_m');
 		$this->load->helper(array('url'));
 		
