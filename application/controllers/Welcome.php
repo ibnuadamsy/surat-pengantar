@@ -6,7 +6,7 @@ class Welcome extends CI_Controller {
 
 	function __construct(){
 		parent::__construct();
-		$this->load->model('pengan_m');
+		$this->load->model('Pengan_m');
 		$this->load->model('nomer_m');
 		$this->load->helper('url');
 		
@@ -25,13 +25,13 @@ class Welcome extends CI_Controller {
 
 	function get_nik(){
 		$NIK=$this->input->post('NIK');
-		$data=$this->pengan_m->get_data_nik($NIK);
+		$data=$this->Pengan_m->get_data_nik($NIK);
 		echo json_encode($data);
 	}
 	function search(){
 		$NIK=$this->input->get('NIK');
 		$data['content'] = 'search_view';
-		$data['data']=$this->pengan_m->search_pengantar($NIK);
+		$data['data']=$this->Pengan_m->search_pengantar($NIK);
 		$this->load->view($this->template,$data);
 		
 	}
