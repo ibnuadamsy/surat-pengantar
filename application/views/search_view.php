@@ -101,7 +101,7 @@
                         <td><?php echo $val->keterangan; ?></td>
                         <td align="center">
                         <?php if (isset($val->status_rt) && ($val->status_rw=='2')&& ($val->status_kel=='2')){
-                           echo "<a href=\"/laporan/laprec/$val->no_pengantar\" type='button' class='btn btn-success btn-xs tooltips'> <span class='glyphicon glyphicon-print'></span> <br>";
+                           echo "<a href=\"/surat-pengantar-pejuang.herokuapp.com/laporan/laprec/$val->no_pengantar\" type='button' class='btn btn-success btn-xs tooltips'> <span class='glyphicon glyphicon-print'></span> <br>";
                            
                           }else{
 
