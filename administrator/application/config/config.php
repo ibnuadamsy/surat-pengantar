@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/Apl_pengantar/administrator';
+$config['base_url'] = 'http://surat-pengantar-pejuang.herokuapp.com/administrator/admin';
 
 /*
 |--------------------------------------------------------------------------
