@@ -105,7 +105,7 @@
                            
                           }else{
 
-                            ?><a href="<?php echo base_url('administrator/laporan/laprec/'.$val->no_pengantar); ?>" type="button" class="btn btn-success btn-xs disabled" >
+                            ?><a href="<?php echo base_url('laporan/laprec/'.$val->no_pengantar); ?>" type="button" class="btn btn-success btn-xs disabled" >
                           <i class="glyphicon glyphicon-print" class="btn btn-success btn-xs tooltips disabled" data-toggle="tooltip"data-placement="bottom" title="Print"></i></a>
                           <?php } ?></td>
                         
