@@ -55,7 +55,7 @@ btncari.onclick = function(event){
 	var valu = textcari.value;
 	console.log('event telah diclick');
 	  $.ajax({
-	    url:"http://localhost/Apl_pengantar/index.php/Welcome/ambil_data",
+	    url:"http://surat-pengantar-pejuang.herokuapp.com/index.php/Welcome/ambil_data",
 	    type:"get",
 	    cache:false,
 	    timeout:10000,
