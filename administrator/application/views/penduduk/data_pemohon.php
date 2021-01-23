@@ -54,7 +54,7 @@
 
                                             <a data-toggle="modal" data-target="#modal-show<?=$val->NIK;?>" class="btn btn-warning btn-xs"  data-placement="top"  title="Detail"><i class="fa fa-tripadvisor"></i></a>
                                             
-                                            <a target="_blank" href="<?php echo base_url('/laporan/laprec/' . $val->no_pengantar); ?>" class="btn btn-success btn-xs">
+                                            <a target="_blank" href="<?php echo base_url('/Laporan/laprec/' . $val->no_pengantar); ?>" class="btn btn-success btn-xs">
 
                                             <i class="glyphicon glyphicon-print" class="btn btn-success btn-xs tooltips" data-toggle="tooltip" data-placement="bottom" title="Print"></i></a>
                                             
