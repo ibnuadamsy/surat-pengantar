@@ -897,13 +897,13 @@ function Image($file, $x=null, $y=null, $w=0, $h=0, $type='', $link='')
 		$h = -96;
 	}
 	if($w<0)
-		$w = $info['w']*72/$w/$this->k;
+		$w = (-$info['w']*72)/$w/$this->k;
 	if($h<0)
-		$h = $info['h']*72/$h/$this->k;
+		$h = (-$info['h']*72)/$h/$this->k;
 	if($w==0)
-		$w = $h * $info['w']/$info['h'];
+		$w = $h*($info['w']/$info['h']);
 	if($h==0)
-		$h = $w * $info['h']/$info['w'];
+		$h = $w*($info['h']/$info['w']);
 
 	// Flowing mode
 	if($y===null)
