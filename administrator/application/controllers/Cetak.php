@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class cetak extends AUTH_Controller {
+class Cetak extends AUTH_Controller {
 	var $template='template/index';
 
 	public function __construct(){
