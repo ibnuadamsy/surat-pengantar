@@ -1,6 +1,6 @@
 <?php if ( !defined('BASEPATH')) exit();
 
-class pdf
+class Pdf
 {
     function __construct()
     {
