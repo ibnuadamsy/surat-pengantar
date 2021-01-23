@@ -885,6 +885,24 @@ function Image($file, $x=null, $y=null, $w=0, $h=0, $type='', $link='')
 		$info['i'] = count($this->images)+1;
 		$this->images[$file] = $info;
 	}
+	else
+		$info = $this->images[$file];
+
+	// Automatic width and height calculation if needed
+	if($w==0 && $h==0)
+	{
+		// Put image at 96 dpi
+		$w = -96;
+		$h = -96;
+	}
+	if($w<0)
+		$w = -$info['w']*72/$w/$this->k;
+	if($h<0)
+		$h = -$info['h']*72/$h/$this->k;
+	if($w==0)
+		$w = $h*$info['w']/$info['h'];
+	if($h==0)
+		$h = $w*$info['h']/$info['w'];
 
 	// Flowing mode
 	if($y===null)
