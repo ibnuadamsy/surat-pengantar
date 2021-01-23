@@ -1,7 +1,7 @@
 <?php
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
-    class petugas_m extends CI_Model {
+    class Petugas_m extends CI_Model {
     	
 	function __construct()
 	{
