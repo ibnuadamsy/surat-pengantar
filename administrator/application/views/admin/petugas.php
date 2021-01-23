@@ -134,8 +134,8 @@
                     <option value="06">06</option>
                     <option value="07">07</option>
                     <option value="08">08</option>
-                    <option value="08">09</option>
-                    <option value="08">10</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
               </select>
               </div>
               </div>
@@ -145,7 +145,7 @@
               <div class="col-md-9">
               <select name="rw" class="form-control">
                     <option value="">Pilih RW</option>
-                    <option value="01">12</optio>
+                    <option value="12">12</optio>
               </select>
               </div>
               </div>
