@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class user_c extends AUTH_Controller {
+class User_c extends AUTH_Controller {
 	var $template='template/index';
 
 	function __construct(){
