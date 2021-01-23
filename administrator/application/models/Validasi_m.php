@@ -1,7 +1,7 @@
 <?php
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
-    class validasi_m extends CI_Model {
+    class Validasi_m extends CI_Model {
     	
 	function __construct()
 	{
